@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/mxm logo.png" type="image/png">
+    <title>Machine Exchange Mart - About Us</title>
+    <script src="./assets/js/tailwind.js"></script>
+</head>
+
+<body class="m-0 bg-[#eef2f7] text-[#0f2247] font-sans antialiased selection:bg-[#2f80ff]/20">
+    <div class="w-full min-h-screen flex flex-col">
+
+        <header
+            class="bg-[#041b45] text-white fixed top-0 left-0 right-0 z-50 shadow-[0_4px_30px_rgba(4,27,69,0.15)] backdrop-blur-md">
+            <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12 h-[86px] flex items-center justify-between">
+
+                <div class="flex items-center gap-3 min-w-0">
+                    <div
+                        class="w-14 h-14 rounded-xl bg-white/95 flex items-center justify-center shadow-md shrink-0 overflow-hidden p-1">
+                        <img src="assets/images/mxm logo.png" alt="MXM logo" class="w-full h-full object-contain" />
+                    </div>
+                    <div class="leading-tight">
+                        <div class="text-[16px] sm:text-[18px] font-medium text-white">Machine</div>
+                        <div class="text-[16px] sm:text-[18px] font-semibold text-[#91D5FF]">Exchange Mart</div>
+                    </div>
+                </div>
+
+                <!-- <nav class="hidden lg:flex items-center gap-10 text-[14px] font-medium text-white/95">
+                    <a href="#" class="hover:text-[#3a8cff] transition-colors">Home</a>
+                    <a href="#" class="text-[#3a8cff] border-b-2 border-[#3a8cff] pb-1">About Us</a>
+                    <a href="#" class="hover:text-[#3a8cff] transition-colors">Contact Us</a>
+                </nav> -->
+
+                <div class="hidden sm:flex items-center gap-3">
+                    <button
+                        class="px-5 h-10 rounded-lg border border-white/30 text-[14px] font-semibold text-white hover:bg-white/10 transition-all">
+                        Login
+                    </button>
+                    <button
+                        class="px-5 h-10 rounded-lg bg-[#2f80ff] text-[14px] font-semibold text-white shadow-[0_8px_20px_rgba(47,128,255,0.3)] hover:bg-[#1e70ef] transition-all">
+                        Sign Up
+                    </button>
+                </div>
+
+                <div class="flex lg:hidden items-center">
+                    <button id="menu-btn" class="p-2 text-white/90 hover:text-white focus:outline-none"
+                        aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden bg-[#041b45] border-t border-white/10 px-6 py-6 absolute top-[86px] left-0 w-full shadow-xl transition-all duration-300 ease-in-out">
+                <!-- <nav class="flex flex-col gap-4 text-[16px] font-medium mb-6">
+                    <a href="#" class="text-white/80 hover:text-white py-2">Home</a>
+                    <a href="#" class="text-[#3a8cff] py-2 font-semibold">About Us</a>
+                    <a href="#" class="text-white/80 hover:text-white py-2">Contact Us</a>
+                </nav> -->
+                <div class="flex flex-col gap-3 sm:hidden">
+                    <button
+                        class="w-full h-11 rounded-lg border border-white/30 text-[14px] font-semibold text-white">Login</button>
+                    <button class="w-full h-11 rounded-lg bg-[#2f80ff] text-[14px] font-semibold text-white">Sign
+                        Up</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow pt-[86px] overflow-x-hidden">
+
+            <!-- 1. Head Section: AOS CSS Shamil Karein -->
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+            <style>
+                /* Premium Smooth Scroll Behavior */
+                html {
+                    scroll-behavior: smooth;
+                }
+
+                /* Custom Animation for Gradient Background */
+                .bg-animate {
+                    background-size: 200% 200%;
+                    animation: gradientMove 15s ease infinite;
+                }
+
+                @keyframes gradientMove {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+
+                    50% {
+                        background-position: 100% 50%;
+                    }
+
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+
+                /* Fixing AOS hidden elements for better SEO and accessibility */
+                [data-aos] {
+                    pointer-events: none;
+                }
+
+                .aos-animate {
+                    pointer-events: auto;
+                }
+            </style>
+
+            <div class="overflow-x-hidden"> <!-- Prevent horizontal scroll during animations -->
+
+                <!-- HERO SECTION -->
+                <section
+                    class="relative bg-[#06306f] overflow-hidden z-10 bg-[linear-gradient(90deg,rgba(4,27,69,0.92)_0%,rgba(6,48,111,0.88)_45%,rgba(6,48,111,0.72)_100%),url('assets/images/banner.png')] bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,white_0%,transparent_35%),radial-gradient(circle_at_70%_40%,white_0%,transparent_28%)]">
+                    </div>
+
+                    <div
+                        class="relative max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center min-h-[420px]">
+                        <div class="max-w-[540px] text-white text-center lg:text-left" data-aos="fade-right"
+                            data-aos-duration="1200">
+                            <div
+                                class="text-[#56a2ff] text-[14px] sm:text-[16px] tracking-[0.18em] font-bold uppercase mb-4">
+                                About Us
+                            </div>
+                            <h1
+                                class="text-[36px] sm:text-[44px] lg:text-[48px] leading-[1.15] font-bold tracking-[-0.02em] mb-6">
+                                Empowering Deals.<br class="hidden sm:inline">Building Trust.
+                            </h1>
+                            <p
+                                class="text-[16px] sm:text-[18px] lg:text-[20px] leading-[1.7] text-white/90 max-w-[520px] mx-auto lg:mx-0">
+                                Machine Exchange Mart (MXM) is a digital marketplace where buyers and sellers connect to
+                                buy, sell, and exchange machines, appliances, vehicles, and more - new or pre-owned.
+                            </p>
+                        </div>
+
+                        <div class="relative h-[280px] sm:h-[340px] lg:h-[360px] w-full max-w-[480px] mx-auto lg:max-w-none flex items-center justify-center"
+                            data-aos="zoom-in-up" data-aos-duration="1500">
+                            <!-- Desktop View -->
+                            <div
+                                class="absolute right-[0%] bottom-[20px] w-[80%] h-[200px] sm:h-[260px] lg:h-[280px] rounded-[12px] border-[2px] border-black bg-[#0d0d0d] shadow-[0_20px_50px_rgba(0,0,0,0.4)] transition-transform hover:scale-105 duration-500">
+                                <div
+                                    class="absolute inset-[6px] sm:inset-[8px] rounded-[6px] bg-white overflow-hidden border border-[#dbe4f0]">
+                                    <img src="assets/images/pcsrc.png" alt="Desktop View"
+                                        class="w-full h-full object-cover object-top" />
+                                </div>
+                            </div>
+
+                            <!-- Mobile View -->
+                            <div
+                                class="absolute left-[0%] bottom-[10px] sm:bottom-[15px] w-[95px] sm:w-[130px] h-[190px] sm:h-[255px] rounded-[16px] bg-black p-[4px] sm:p-[6px] shadow-[0_16px_40px_rgba(0,0,0,0.4)] z-20 transition-transform hover:-translate-y-2 duration-500">
+                                <div
+                                    class="w-full h-full rounded-[12px] bg-white overflow-hidden border border-[#dbe4f0] flex flex-col">
+                                    <img src="assets/images/phonescr.jpeg" alt="Mobile View"
+                                        class="w-full h-full object-cover object-top" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- OUR STORY SECTION -->
+                <section class="bg-[#f2f5fa] pt-16 pb-24 lg:pt-24 lg:pb-32 z-20 relative overflow-hidden">
+                    <div
+                        class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12 grid lg:grid-cols-[480px_minmax(0,1fr)] xl:grid-cols-[520px_minmax(0,1fr)] gap-16 items-center">
+
+                        <div class="relative pb-20 sm:pb-24 lg:pb-0 order-2 lg:order-1" data-aos="fade-up-right"
+                            data-aos-duration="1200">
+                            <div
+                                class="rounded-[24px] sm:rounded-[28px] overflow-hidden h-[300px] sm:h-[420px] shadow-xl relative z-10 group">
+                                <img src="assets/images/handshake.png" alt="Connecting Buyers"
+                                    class="w-full h-full object-cover transition-transform duration-[2000ms] ease-out group-hover:scale-105" />
+                            </div>
+
+                            <div class="absolute left-5 lg:left-16 bottom-5 lg:-bottom-12 -translate-x-1/2 bg-[#1f66e5] text-white rounded-[20px] sm:rounded-[24px] w-[90%] sm:w-[380px] px-6 sm:px-8 py-5 sm:py-6 shadow-2xl flex items-center gap-4 sm:gap-5 z-30"
+                                data-aos="zoom-in" data-aos-delay="400" data-aos-duration="800">
+                                <div class="shrink-0 text-white">
+                                    <svg width="36" height="36" viewBox="0 0 44 44" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" class="sm:w-[40px] sm:h-[40px]">
+                                        <path
+                                            d="M14 20C16.7614 20 19 17.7614 19 15C19 12.2386 16.7614 10 14 10C11.2386 10 9 12.2386 9 15C9 17.7614 11.2386 20 14 20Z"
+                                            stroke="currentColor" stroke-width="2.5" />
+                                        <path
+                                            d="M30 20C32.7614 20 35 17.7614 35 15C35 12.2386 32.7614 10 30 10C27.2386 10 25 12.2386 25 15C25 17.7614 27.2386 20 30 20Z"
+                                            stroke="currentColor" stroke-width="2.5" />
+                                        <path d="M4 33C4 28.5817 7.58172 25 12 25H16C20.4183 25 24 28.5817 24 33"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                                        <path d="M20 33C20 28.5817 23.5817 25 28 25H32C36.4183 25 40 28.5817 40 33"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p class="text-[15px] sm:text-[18px] leading-tight font-medium">
+                                    Connecting Buyers with Verified Sellers Across Industries
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 lg:pt-0 order-1 lg:order-2 text-center lg:text-left" data-aos="fade-left"
+                            data-aos-duration="1200">
+                            <div
+                                class="text-[#2a72ea] text-[15px] sm:text-[16px] tracking-[0.16em] font-bold uppercase mb-4">
+                                Our Story
+                            </div>
+                            <h2
+                                class="text-[32px] sm:text-[42px] lg:text-[48px] xl:text-[52px] leading-[1.12] tracking-[-0.03em] font-bold text-[#14284d] mb-6">
+                                Bridging the Gap in<br>Industrial Trading
+                            </h2>
+                            <div class="space-y-6">
+                                <p
+                                    class="text-[16px] sm:text-[19px] xl:text-[20px] leading-[1.75] text-[#49576f] max-w-[680px] mx-auto lg:mx-0">
+                                    In today's fast-moving world, finding the right equipment or the right buyer
+                                    shouldn't be
+                                    complicated. MXM was created to simplify industrial trading by bringing everything
+                                    to one
+                                    transparent, secure, and smart platform.
+                                </p>
+                                <p
+                                    class="text-[16px] sm:text-[19px] xl:text-[20px] leading-[1.75] text-[#49576f] max-w-[680px] mx-auto lg:mx-0">
+                                    Whether you are a manufacturer, dealer, trader, or individual, MXM helps you grow
+                                    your
+                                    business by giving you the power to list, discover, connect, and deal - all in one
+                                    place.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- WHAT WE OFFER SECTION -->
+                <section class="bg-white py-16 lg:py-24">
+                    <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
+                        <div data-aos="fade-up">
+                            <div
+                                class="text-[#2a72ea] text-[15px] sm:text-[16px] tracking-[0.16em] font-bold uppercase mb-4">
+                                What We Offer</div>
+                            <h2
+                                class="text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] font-bold text-[#14284d] mb-12 sm:mb-16">
+                                More Than Just a Marketplace
+                            </h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-6">
+                            <!-- Card 1 -->
+                            <div class="bg-white rounded-[22px] px-6 py-8 shadow-[0_8px_30px_rgba(15,34,71,0.05)] border border-[#e7edf6] hover:border-[#2169e6] transition-all duration-300"
+                                data-aos="fade-up" data-aos-delay="100">
+                                <div class="w-12 h-12 mx-auto mb-6 text-[#2169e6]">
+                                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M26.8 7.2 40.8 21.2c1.6 1.6 1.6 4.1 0 5.7L28.9 38.8c-.8.8-1.8 1.2-2.9 1.2H12c-2.2 0-4-1.8-4-4V22c0-1.1.4-2.1 1.2-2.9L21.1 7.2c1.6-1.6 4.1-1.6 5.7 0Z"
+                                            fill="currentColor" />
+                                        <circle cx="30" cy="18" r="3" fill="white" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-3">Buy or Sell Anything</h3>
+                                <p class="text-[14px] sm:text-[15px] leading-[1.6] text-[#56657d]">List and explore new
+                                    or
+                                    used machines, appliances, vehicles, and more.</p>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="bg-white rounded-[22px] px-6 py-8 shadow-[0_8px_30px_rgba(15,34,71,0.05)] border border-[#e7edf6] hover:border-[#2169e6] transition-all duration-300"
+                                data-aos="fade-up" data-aos-delay="200">
+                                <div class="w-12 h-12 mx-auto mb-6 text-[#2169e6]">
+                                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 6 36 10v10c0 8.4-5.1 16.2-12 20-6.9-3.8-12-11.6-12-20V10L24 6Z"
+                                            fill="currentColor" />
+                                        <path d="m18 23 4 4 8-9" stroke="white" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-3">Verified & Trusted</h3>
+                                <p class="text-[14px] sm:text-[15px] leading-[1.6] text-[#56657d]">Verified sellers,
+                                    secure
+                                    communication, and genuine listings you can rely on.</p>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="bg-white rounded-[22px] px-6 py-8 shadow-[0_8px_30px_rgba(15,34,71,0.05)] border border-[#e7edf6] hover:border-[#2169e6] transition-all duration-300"
+                                data-aos="fade-up" data-aos-delay="300">
+                                <div class="w-12 h-12 mx-auto mb-6 text-[#2169e6]">
+                                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="9" y="10" width="30" height="22" rx="6" fill="currentColor" />
+                                        <circle cx="18" cy="21" r="2.3" fill="white" />
+                                        <circle cx="24" cy="21" r="2.3" fill="white" />
+                                        <circle cx="30" cy="21" r="2.3" fill="white" />
+                                        <path d="M18 32v7l6-4 6 4v-7" fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-3">Easy Chat</h3>
+                                <p class="text-[14px] sm:text-[15px] leading-[1.6] text-[#56657d]">Chat, negotiate and
+                                    close
+                                    deals directly with sellers through the app instantly.</p>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="bg-white rounded-[22px] px-6 py-8 shadow-[0_8px_30px_rgba(15,34,71,0.05)] border border-[#e7edf6] hover:border-[#2169e6] transition-all duration-300"
+                                data-aos="fade-up" data-aos-delay="400">
+                                <div class="w-12 h-12 mx-auto mb-6 text-[#2169e6]">
+                                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 6 36 10v10c0 8.4-5.1 16.2-12 20-6.9-3.8-12-11.6-12-20V10L24 6Z"
+                                            fill="currentColor" />
+                                        <path d="m19 23 4 4 7-8" stroke="white" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-3">Safe & Secure</h3>
+                                <p class="text-[14px] sm:text-[15px] leading-[1.6] text-[#56657d]">Your strategic
+                                    transactions and critical data are protected with global parameters.</p>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="bg-white rounded-[22px] px-6 py-8 shadow-[0_8px_30px_rgba(15,34,71,0.05)] border border-[#e7edf6] hover:border-[#2169e6] transition-all duration-300"
+                                data-aos="fade-up" data-aos-delay="500">
+                                <div class="w-12 h-12 mx-auto mb-6 text-[#2169e6]">
+                                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 35h28" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" />
+                                        <path d="M14 28l7-7 5 5 10-12" stroke="currentColor" stroke-width="4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M34 14h6v6" stroke="currentColor" stroke-width="4"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-3">High Visibility</h3>
+                                <p class="text-[14px] sm:text-[15px] leading-[1.6] text-[#56657d]">Get maximum reach and
+                                    visibility under target business demographics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- HOW IT WORKS SECTION -->
+                <section class="bg-[#f2f5fa] py-16 lg:py-24 overflow-hidden">
+                    <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12 text-center">
+                        <div data-aos="fade-down" data-aos-duration="1000">
+                            <div
+                                class="text-[#2a72ea] text-[15px] sm:text-[16px] tracking-[0.16em] font-bold uppercase mb-4">
+                                How It Works</div>
+                            <h2
+                                class="text-[32px] sm:text-[42px] lg:text-[48px] leading-[1.15] tracking-[-0.02em] font-bold text-[#14284d] mb-16">
+                                Simple Steps, Powerful Deals</h2>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-6">
+                            <!-- Step 1 -->
+                            <div class="relative flex flex-col items-center" data-aos="zoom-in" data-aos-delay="100">
+                                <div
+                                    class="w-20 h-20 rounded-full bg-white shadow-md border border-[#e5ebf5] flex items-center justify-center text-[#2169e6] mb-4 hover:rotate-12 transition-transform duration-300">
+                                    <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="21" cy="17" r="7" fill="currentColor" />
+                                        <path d="M8 37c0-6.075 4.925-11 11-11h4c6.075 0 11 4.925 11 11"
+                                            fill="currentColor" />
+                                        <path d="M36 16v12M30 22h12" stroke="currentColor" stroke-width="4"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="w-7 h-7 rounded-full bg-[#2169e6] text-white text-[13px] font-semibold flex items-center justify-center mb-4 border-4 border-[#f2f5fa]">
+                                    1</div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-2">Create Account</h3>
+                                <p class="text-[14px] sm:text-[15px] text-[#56657d] max-w-[200px]">Sign up in just a few
+                                    clicks to explore verified listings.</p>
+                                <div
+                                    class="hidden lg:block absolute top-10 left-[65%] w-[70%] border-t-2 border-dotted border-[#8eb8fb]">
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="relative flex flex-col items-center" data-aos="zoom-in" data-aos-delay="300">
+                                <div
+                                    class="w-20 h-20 rounded-full bg-white shadow-md border border-[#e5ebf5] flex items-center justify-center text-[#2169e6] mb-4 hover:rotate-12 transition-transform duration-300">
+                                    <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M24 6 40 14v20L24 42 8 34V14L24 6Z" fill="currentColor" />
+                                        <path d="M24 6v36M8 14l16 8 16-8" stroke="white" stroke-width="2.5" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="w-7 h-7 rounded-full bg-[#2169e6] text-white text-[13px] font-semibold flex items-center justify-center mb-4 border-4 border-[#f2f5fa]">
+                                    2</div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-2">List Your Product</h3>
+                                <p class="text-[14px] sm:text-[15px] text-[#56657d] max-w-[200px]">Add specific
+                                    industrial
+                                    parameters, conditions, and images.</p>
+                                <div
+                                    class="hidden lg:block absolute top-10 left-[65%] w-[70%] border-t-2 border-dotted border-[#8eb8fb]">
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="relative flex flex-col items-center" data-aos="zoom-in" data-aos-delay="500">
+                                <div
+                                    class="w-20 h-20 rounded-full bg-white shadow-md border border-[#e5ebf5] flex items-center justify-center text-[#2169e6] mb-4 hover:rotate-12 transition-transform duration-300">
+                                    <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="8" y="9" width="32" height="24" rx="6" fill="currentColor" />
+                                        <circle cx="18" cy="21" r="2.2" fill="white" />
+                                        <circle cx="24" cy="21" r="2.2" fill="white" />
+                                        <circle cx="30" cy="21" r="2.2" fill="white" />
+                                        <path d="M18 33v6l6-4 6 4v-6" fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="w-7 h-7 rounded-full bg-[#2169e6] text-white text-[13px] font-semibold flex items-center justify-center mb-4 border-4 border-[#f2f5fa]">
+                                    3</div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-2">Connect Easily</h3>
+                                <p class="text-[14px] sm:text-[15px] text-[#56657d] max-w-[200px]">Engage with serious
+                                    prospective buyers inside real-time messaging layout.</p>
+                                <div
+                                    class="hidden lg:block absolute top-10 left-[65%] w-[70%] border-t-2 border-dotted border-[#8eb8fb]">
+                                </div>
+                            </div>
+
+                            <!-- Step 4 -->
+                            <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-delay="700">
+                                <div
+                                    class="w-20 h-20 rounded-full bg-white shadow-md border border-[#e5ebf5] flex items-center justify-center text-[#2169e6] mb-4 hover:rotate-12 transition-transform duration-300">
+                                    <svg width="36" height="36" viewBox="0 0 48 48" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17 25 10 18c-2.5-2.5-2.5-6.5 0-9s6.5-2.5 9 0l5 5"
+                                            stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M31 25l7-7c2.5-2.5 2.5-6.5 0-9s-6.5-2.5-9 0l-5 5" stroke="currentColor"
+                                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M15 29l4 4c2.8 2.8 7.2 2.8 10 0l4-4" stroke="currentColor"
+                                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div
+                                    class="w-7 h-7 rounded-full bg-[#2169e6] text-white text-[13px] font-semibold flex items-center justify-center mb-4 border-4 border-[#f2f5fa]">
+                                    4</div>
+                                <h3 class="text-[18px] font-bold text-[#15284d] mb-2">Close The Deal</h3>
+                                <p class="text-[14px] sm:text-[15px] text-[#56657d] max-w-[200px]">Finalize the legal
+                                    transaction protocol safely with pure satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CALL TO ACTION SECTION -->
+                <section class="bg-[#f2f5fa] py-8 sm:py-12 lg:py-16">
+                    <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12">
+                        <div class="bg-white rounded-[24px] sm:rounded-[28px] border border-[#e5ebf5] shadow-2xl px-6 sm:px-10 lg:px-14 py-10 flex flex-col lg:flex-row items-center justify-between gap-8"
+                            data-aos="flip-up" data-aos-duration="1000">
+                            <div
+                                class="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 max-w-[680px]">
+                                <div>
+                                    <h2 class="text-[26px] sm:text-[32px] leading-[1.25] font-bold text-[#14284d] mb-3">
+                                        Let's Build the Future of Industrial Trading - Together.
+                                    </h2>
+                                    <p class="text-[15px] sm:text-[16px] leading-[1.7] text-[#56657d]">Join MXM today
+                                        and
+                                        experience a smarter, faster, and more reliable way to buy, sell, and exchange
+                                        high-value assets.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto shrink-0">
+                                <button
+                                    class="h-12 px-8 rounded-xl bg-[#2f80ff] text-white font-semibold shadow-lg hover:bg-[#1a71f2] hover:-translate-y-1 transition-all duration-300 whitespace-nowrap">
+                                    Get Started Now →
+                                </button>
+                                <button
+                                    class="h-12 px-8 rounded-xl border border-[#cdd9ea] text-[#2453a4] font-semibold bg-white hover:bg-slate-50 hover:shadow-md transition-all duration-300 whitespace-nowrap">
+                                    Contact Us
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- 3. Footer Section: AOS Script Initialise Karein -->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                // AOS Initialization with Premium Settings
+                AOS.init({
+                    duration: 1000, // Animation speed
+                    once: false,    // Animation har bar chalegi jab scroll karenge (is se website dynamic lagti hai)
+                    mirror: true,   // Jab user wapas upar scroll kare tab bhi animate ho
+                    anchorPlacement: 'top-bottom', // Kab animation shuru ho
+                    offset: 120      // Kitna pixel scroll karne par trigger ho
+                });
+            </script>
+        </main>
+
+        <footer class="bg-[#031536] text-white border-t border-white/10 pt-16 pb-8 mt-auto">
+            <div class="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-12">
+
+                <div
+                    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12 gap-x-8 pb-14 border-b border-white/10">
+
+                    <div class="col-span-2 md:col-span-3 lg:col-span-2 space-y-5">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-14 h-14 rounded-xl bg-white/95 flex items-center justify-center shadow-md shrink-0 overflow-hidden p-1">
+                                <img src="assets/images/mxm logo.png" alt="MXM logo"
+                                    class="w-full h-full object-contain" />
+                            </div>
+                            <span class="text-[18px] font-bold tracking-tight text-white">Machine Exchange Mart</span>
+                        </div>
+                        <p class="text-[14px] leading-[1.7] text-white/70 max-w-[320px]">
+                            The standard infrastructure platform empowering trade operations across technical, heavy
+                            machinery, and high-value industrial inventory landscapes worldwide.
+                        </p>
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            <span class="text-[12px] font-medium text-white/80">All Core Services Operational</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-[14px] font-bold tracking-wider uppercase text-[#3a8cff]">Marketplace</h4>
+                        <ul class="space-y-2.5 text-[14px] text-white/75">
+                            <li><a href="#" class="hover:text-white transition-colors">Heavy Machinery</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Textile Equipment</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Industrial Vehicles</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Pre-Owned Appliances</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="text-[14px] font-bold tracking-wider uppercase text-[#3a8cff]">Company</h4>
+                        <ul class="space-y-2.5 text-[14px] text-white/75">
+                            <li><a href="#" class="hover:text-white transition-colors">About Our Vision</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Verification Process</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Privacy Infrastructure</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">Help Desk Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="space-y-4 col-span-2 md:col-span-1">
+                        <h4 class="text-[14px] font-bold tracking-wider uppercase text-[#3a8cff]">Contact Us</h4>
+                        <p class="text-[14px] leading-relaxed text-white/70">
+                            MXM Info Private Limited<br>
+                            CIN: U62099HR2026PTC145218<br>
+                            Reg Office: 769, First Floor, Huda,<br>
+                            Sector-11, Panipat, Haryana 132103<br>
+                            Contact: +91 9813013071<br>
+                            Email: <a href="mailto:info@mxminfo.com"
+                                class="hover:text-white transition-colors">info@mxminfo.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[13px] text-white/50">
+                    <div>
+                        &copy; 2026 Machine Exchange Mart (MXM). All rights reserved.
+                    </div>
+                    <div class="flex items-center gap-6">
+                        <a href="#" class="hover:text-white/80 transition-colors">Terms of Protocol</a>
+                        <a href="#" class="hover:text-white/80 transition-colors">Privacy Framework</a>
+                        <a href="#" class="hover:text-white/80 transition-colors">SLA Architecture</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            } else {
+                menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 1024) {
+                mobileMenu.classList.add('hidden');
+                menuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+            }
+        });
+    </script>
+</body>
+
+</html>
